@@ -1,0 +1,6 @@
+buscar:
+
+ajax
+middleware
+variables de sesion
+

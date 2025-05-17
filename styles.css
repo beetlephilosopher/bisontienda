@@ -1,0 +1,157 @@
+
+:root {
+            --cafe-oscuro: #332521;
+            --cafe-medio: #8D6E63;
+            --cafe-claro: #e4d6d1;
+            --crema: #f5e2d3;
+            --texto-oscuro: #3E2723;
+            --dorado: #FFD700;
+            --sombra: 0 4px 6px rgba(93, 64, 55, 0.1);
+        }
+        
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background-color: var(--crema);
+            color: var(--texto-oscuro);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Barra de navegación */
+        .navbar {
+            background-color: var(--cafe-oscuro);
+            padding: 0.8rem 1rem;
+            box-shadow: var(--sombra);
+        }
+        
+        .navbar-brand img {
+            height: 40px;
+            transition: transform 0.3s;
+        }
+        
+        .navbar-brand:hover img {
+            transform: scale(1.05);
+        }
+        
+        .nav-link {
+            color: var(--cafe-claro) !important;
+            font-weight: 500;
+            padding: 0.5rem 1rem !important;
+            margin: 0 0.3rem;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+        
+        .nav-link:hover {
+            background-color: var(--cafe-medio);
+            color: white !important;
+        }
+        
+        /* Hero section */
+        .hero-section {
+
+            text-align:center;
+            padding: 4rem 0;
+            background-image: linear-gradient(rgba(93, 64, 55, 0.7), rgba(93, 64, 55, 0.7)), url('BisonteBack.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .hero-title {
+            text-align:center;
+            margin: 0 auto 2rem;
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .hero-subtitle {
+            text-align:center;
+            margin: 0 auto 2rem;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            max-width: 800px;
+        }
+        
+        /* Botones */
+        .btn-hero {
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 6px;
+            transition: all 0.3s;
+            margin: 0 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+
+        
+        .btn-primary {
+            background-color: #FF8C00;
+            color: #FF8C00;
+            border: none;
+        }
+        
+        .btn-primary:hover {
+            background-color: #FFC107;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .btn-outline-light {
+            border: 2px solid white;
+            color: white;
+        }
+        
+        .btn-outline-light:hover {
+            background-color: white;
+            color: var(--cafe-oscuro);
+        }
+        
+        /* Contenido principal */
+        .main-content {
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .main-content p {
+            font-size: 1.2rem;
+            max-width: 1000px;
+            margin: 0 auto 2rem;
+            line-height: 1.8;
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: var(--cafe-oscuro);
+            color: var(--cafe-claro);
+            padding: 1.5rem 0;
+            margin-top: auto;
+            text-align: center;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .btn-hero {
+                display: block;
+                width: 80%;
+                margin: 10px auto;
+            }
+        }
